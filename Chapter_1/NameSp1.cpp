@@ -22,3 +22,4 @@ int main(void)
     progcomimpl::simplefunc();
     return 0;
 }
+//::을 범위지정 연산자라고 한다. 
