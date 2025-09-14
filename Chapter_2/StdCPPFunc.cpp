@@ -1,6 +1,8 @@
 #include <cmath>
 #include <cstdio>
 #include <cstring>
+//c를 더하고 .h를 빼면 된다.
+
 using namespace std;
 
 int main(void)
