@@ -32,6 +32,7 @@ class Car
 void Car::initmembers(const char*ID, int fuel)
 {
     strcpy(gamerID, ID);
+    //public에 포함된 initmembers로 private의 gamerID를 초기화 하고 있다.
     fuelgauge = fuel;
     curspeed =0;
 }
