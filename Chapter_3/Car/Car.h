@@ -26,5 +26,6 @@ class Car
         void accel();
         void Break();
 };
+//inline 함수: “그 함수를 쓰는 모든 .cpp에서 정의가 보이도록 해야 한다.” → 헤더에 둬라.
 
 #endif
