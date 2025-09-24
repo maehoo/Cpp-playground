@@ -2,13 +2,13 @@
 #include <cstring>
 using namespace std;
 
-class person
+class Person
 {
     private:
         char * name;
         int age;
     public:
-        person(char *myname, int myage)
+        Person(const char *myname, int myage)
         {
             int len = strlen(myname) +1;
             name = new char[len];
