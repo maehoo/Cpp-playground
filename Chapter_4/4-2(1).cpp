@@ -4,38 +4,55 @@ using namespace std;
 class Point
 {
     private:
-        int xpos, ypos,Radius;
+        int xpos, ypos;
     public:
-        void init(int x, int y,int rad)
+        void init(int x, int y)
         {
-            xpos = x;
-            ypos = y;
-            Radius = rad;
+            xpos=x;
+            ypos=y;
         }
-        void showinfo()
+        void showpointinfo() const
         {
-            cout << "radius: "<<Radius<<endl;
-            cout<< "["<<xpos<<","<<ypos<<"]"<<endl;
+            cout<<"[" <<xpos<<", "<<ypos<<']'<<endl;
+        }
+};
+
+class Circle
+{
+    private:
+        int rad;
+        Point center;
+    public:
+        void init(int x, int y, int r)
+        {
+            rad=r;
+            center.init(x,y);
+        }
+
+        void showcircleinfo() const
+        {
+            cout<<"radius: "<<rad<<endl;
+            center.showpointinfo();
         }
 };
 
 class Ring
 {
     private:
-        Point inner;
-        Point outter;
+        Circle incircle;
+        Circle outcircle;
     public:
-        void init(int a, int b, int c ,int d, int e, int f)
+        void init(int x, int y, int r, int X, int Y, int R)
         {
-            inner.init(a,b,c);
-            outter.init(d,e,f);
+            incircle.init(x,y,r);
+            outcircle.init(X,Y,R);
         }
-        void showringinfo()
-        {   
-            cout<<"inner circle info"<<endl;
-            inner.showinfo();
-            cout<<"outter circle info"<<endl;
-            outter.showinfo();
+        void showringinfo() const
+        {
+            cout<<"inner circle info.." <<endl;
+            incircle.showcircleinfo();
+            cout<<"outter circle info.."<<endl;
+            outcircle.showcircleinfo();
         }
 };
 
