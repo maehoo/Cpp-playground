@@ -24,16 +24,16 @@ class namecard
     public:
         namecard(const char *myname, const char *mycompany,const char * myphonenumber,int A):a(A)
         {
-            int a = strlen(myname)+1;
-            name = new char[a];
+            int b = strlen(myname)+1;
+            name = new char[b];
             strcpy(name,myname);
 
-            a = strlen(mycompany) +1;
-            company = new char[a];
+            b = strlen(mycompany) +1;
+            company = new char[b];
             strcpy(company,mycompany);
 
-            a = strlen(myphonenumber) +1;
-            phonenumber = new char[a];
+            b = strlen(myphonenumber) +1;
+            phonenumber = new char[b];
             strcpy(phonenumber,myphonenumber);
 
         }
