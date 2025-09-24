@@ -9,10 +9,11 @@ class sosimple
     public:
         sosimple(int n1, int n2) : num1(n1),num2(n2)
         {}
-        sosimple(sosimple &copy) : num1(copy.num1) , num2(copy.num2)
+        sosimple(const sosimple &copy) : num1(copy.num1) , num2(copy.num2)
         {
             cout<<"called sosimple(sosimple &copy)" <<endl;
         }
+
         void showsimpledata()
         {
             cout<<num1<<endl;
