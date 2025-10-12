@@ -30,6 +30,11 @@ class police
             else
                 pistol = NULL;
         }
+        void puthandcuff()
+        {
+            cout<<"SNAP!"<<endl;
+            handcuffs--;
+        }
         void shot()
         {
             if(pistol == NULL)
