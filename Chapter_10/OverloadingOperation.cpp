@@ -23,9 +23,14 @@ int main(void)
 {
     point pos1(3,4);
     point pos2(10,20);
-    point pos3 =pos1.operator+(pos2);
+    point pos3 = pos1 + pos2;
     pos1.showposition();
     pos2.showposition();
     pos3.showposition();
     return 0;
 }
+/*
+[3, 4]
+[10, 20]
+[13, 24]
+*/
