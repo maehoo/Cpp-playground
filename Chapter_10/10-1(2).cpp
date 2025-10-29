@@ -18,6 +18,12 @@ class point
             ypos += pos1.ypos;
             return *this;//
         }
+        point& operator-=(const point &pos1)
+        {
+            xpos -= pos1.xpos;
+            ypos -= pos1.ypos;
+            return *this;
+        }
 };
 
 int main(void)
@@ -26,6 +32,8 @@ int main(void)
     point pos2(10,20);
     pos1.showposition();
     pos1+=pos2;
+    pos1.showposition();
+    pos1-=pos2;
     pos1.showposition();
     pos2.showposition();
     return 0;
