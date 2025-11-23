@@ -57,6 +57,11 @@ int main(void)
 {
     boundcheckintarray arr(3);
     arr[0] = point(3,4);
+    /*
+    1. point(3,4) 임시객체 생성
+    2. arr[0] 이 가리키는 point 객체의 디폴트 대입 연산자 호출
+    3. 임시객체 point(3,4) 소멸
+    */
     arr[1] = point(5,6);
     arr[2] = point(7,8);
 
