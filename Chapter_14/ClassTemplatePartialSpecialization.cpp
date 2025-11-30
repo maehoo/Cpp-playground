@@ -60,5 +60,15 @@ size of double: 8
 <int,double>
 
 주석처리 해제 했을 경우
-
+size of T1: 1
+size of double: 8
+<T1, double>
+size of T1: 4
+size of T2: 8
+<typename T1 , typename T2>
+size of int: 4
+size of double: 8
+<int,double>
 */
+
+//부분 특수화보다는 전체 특수화가 더 힘이 쎄다.
