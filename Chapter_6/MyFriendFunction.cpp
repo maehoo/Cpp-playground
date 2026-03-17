@@ -27,7 +27,7 @@ class point
     public:
         point(const int &xpos, const int &ypos) : x(xpos), y(ypos)
         {}
-        friend point pointop::pointadd(const point &,const point&);//pointop의 private 함수에 접근가능
+        friend point pointop::pointadd(const point &,const point&);//pointadd와 pointsub함수는 point의 멤버 변수에 접근가능
         friend point pointop::pointsub(const point&,const point&);
         friend void showpointpos(const point&);
 };
