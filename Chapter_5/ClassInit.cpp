@@ -13,7 +13,7 @@ class sosimple
         {
             cout<<"called sosimple(sosimple &copy)" <<endl;
         }
-
+        //직접 정의하지 않아도 sosimple(const sosimple &copy) 함수는 자동으로 삽입된다.
         void showsimpledata()
         {
             cout<<num1<<endl;
