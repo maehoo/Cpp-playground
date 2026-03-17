@@ -18,7 +18,7 @@ class sosimple
             num2=num1;
         }
 };
-
+//mutable이 붙으면 const 함수에서 예외적으로 함수의 값을 변경할 수 있다.
 int main(void)
 {
     sosimple sm(1,2);
