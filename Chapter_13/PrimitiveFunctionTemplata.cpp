@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-template <class T1, class T2>
+template <class T1, class T2> //class 대신에 typename을 사용해도 괜찮다.
 void showdata(double num)
 {
     cout<<(T1)num<<", "<<(T2)num<<endl;
