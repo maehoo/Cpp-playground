@@ -40,3 +40,10 @@ int main(void)
     delete ptr;
     return 0;
 }
+/*
+virtual을 소멸자에 붙이지 않는 경우 실행 결과:
+~first()
+virtual을 소멸자에 붙일 경우 실행 결과:
+~second()
+~first()
+*/
